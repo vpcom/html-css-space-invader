@@ -1,4 +1,4 @@
-# html-css-space-invader
+# HTML/CSS Space Invader
 A Space Invader made with squares in full HTML and CSS3.
 
 ## Description
