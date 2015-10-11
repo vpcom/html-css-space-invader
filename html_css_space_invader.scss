@@ -1,0 +1,29 @@
+/*******************************************************************************
+Name         : HTML/CSS space invader
+File         : html_css_space_invader.scss
+Description  : A space invader made with squares in full HTML and CSS3.
+Objectives   : Implement a full HTML space invader. The CSS3 uses selectors to 
+             : color the correct squares.
+Prerequisites: Ruby, Sass and jQuery
+Usage        : Compile the .scss file with one of the following commands:
+               sass .\html_css_space_invader.scss .\html_css_space_invader.css
+               sass --watch .\html_css_space_invader.scss:.\html_css_space_invader.css
+Compatibility: caniuse.com: OK with Chrome, may be ok with all recent browsers.
+Rights       : Copyright (c) 2015 vincentperrin.com - MIT License                  
+*******************************************************************************/
+
+// the space invader style
+@import "space_invader.scss";
+
+body, html {
+  background: #111;
+  color: #eee;
+}
+
+// var
+$square-width: 30px;
+$transparency: 1;
+$si-color: hsla(120, 100%, 50%, $transparency);
+
+// calling the space invader mixin
+@include space-invader($square-width, $si-color) {}

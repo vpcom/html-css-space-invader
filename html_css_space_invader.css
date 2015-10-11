@@ -1,0 +1,74 @@
+/*******************************************************************************
+Name         : HTML/CSS space invader
+File         : html_css_space_invader.scss
+Description  : A space invader made with squares in full HTML and CSS3.
+Objectives   : Implement a full HTML space invader. The CSS3 uses selectors to 
+             : color the correct squares.
+Prerequisites: Ruby, Sass and jQuery
+Usage        : Compile the .scss file with one of the following commands:
+               sass .\html_css_space_invader.scss .\html_css_space_invader.css
+               sass --watch .\html_css_space_invader.scss:.\html_css_space_invader.css
+Compatibility: caniuse.com: OK with Chrome, may be ok with all recent browsers.
+Rights       : Copyright (c) 2015 vincentperrin.com - MIT License                  
+*******************************************************************************/
+body, html {
+  background: #111;
+  color: #eee; }
+
+.si {
+  width: 352px;
+  height: 256px; }
+  .si div {
+    width: 352px;
+    height: 30px; }
+    .si div div {
+      width: 30px;
+      height: 30px;
+      float: left;
+      border: 1px solid black; }
+  .si > div:nth-of-type(1) > div:nth-of-type(3),
+  .si > div:nth-of-type(1) > div:nth-of-type(9) {
+    background-color: lime; }
+  .si > div:nth-of-type(2) > div:nth-of-type(4),
+  .si > div:nth-of-type(2) > div:nth-of-type(8) {
+    background-color: lime; }
+  .si > div:nth-of-type(3) > div:nth-of-type(3),
+  .si > div:nth-of-type(3) > div:nth-of-type(4),
+  .si > div:nth-of-type(3) > div:nth-of-type(5),
+  .si > div:nth-of-type(3) > div:nth-of-type(6),
+  .si > div:nth-of-type(3) > div:nth-of-type(7),
+  .si > div:nth-of-type(3) > div:nth-of-type(8),
+  .si > div:nth-of-type(3) > div:nth-of-type(9) {
+    background-color: lime; }
+  .si > div:nth-of-type(4) > div:nth-of-type(2),
+  .si > div:nth-of-type(4) > div:nth-of-type(3),
+  .si > div:nth-of-type(4) > div:nth-of-type(5),
+  .si > div:nth-of-type(4) > div:nth-of-type(6),
+  .si > div:nth-of-type(4) > div:nth-of-type(7),
+  .si > div:nth-of-type(4) > div:nth-of-type(9),
+  .si > div:nth-of-type(4) > div:nth-of-type(10) {
+    background-color: lime; }
+  .si > div:nth-of-type(5) div {
+    background-color: lime; }
+  .si > div:nth-of-type(6) > div:nth-of-type(1),
+  .si > div:nth-of-type(6) > div:nth-of-type(3),
+  .si > div:nth-of-type(6) > div:nth-of-type(4),
+  .si > div:nth-of-type(6) > div:nth-of-type(5),
+  .si > div:nth-of-type(6) > div:nth-of-type(6),
+  .si > div:nth-of-type(6) > div:nth-of-type(7),
+  .si > div:nth-of-type(6) > div:nth-of-type(8),
+  .si > div:nth-of-type(6) > div:nth-of-type(9),
+  .si > div:nth-of-type(6) > div:nth-of-type(11) {
+    background-color: lime; }
+  .si > div:nth-of-type(7) > div:nth-of-type(1),
+  .si > div:nth-of-type(7) > div:nth-of-type(3),
+  .si > div:nth-of-type(7) > div:nth-of-type(9),
+  .si > div:nth-of-type(7) > div:nth-of-type(11) {
+    background-color: lime; }
+  .si > div:nth-of-type(8) > div:nth-of-type(4),
+  .si > div:nth-of-type(8) > div:nth-of-type(5),
+  .si > div:nth-of-type(8) > div:nth-of-type(7),
+  .si > div:nth-of-type(8) > div:nth-of-type(8) {
+    background-color: lime; }
+
+/*# sourceMappingURL=html_css_space_invader.css.map */

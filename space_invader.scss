@@ -1,0 +1,112 @@
+///////////////////////////////////////////////////////////////////////////////
+// Name         : HTML/CSS space invader
+// File         : space_invader.scss
+// Description  : A space invader made with squares in full HTML and CSS3.
+// Objectives   : Implement a full HTML space invader. The CSS3 uses selectors
+//              : to color the correct squares.
+// Prerequisites: Ruby, Sass and jQuery
+// Usage        : Compile the .scss file with one of the following commands:
+//                sass .\html_css_space_invader.scss .\html_css_space_invader.css
+//                sass --watch .\html_css_space_invader.scss:.\html_css_space_invader.css
+// Compatibility: caniuse.com: OK with Chrome, may be ok with other browsers.
+// Rights       : Copyright (c) 2015 vincentperrin.com - MIT License      
+///////////////////////////////////////////////////////////////////////////////           
+
+// space-invader style definition
+// $square-width: The size of a small square the space invader is made of
+// $si-color  : HSLa color definition
+@mixin space-invader($square-width, $si-color) {
+  $si-width: 11 * ($square-width + 2); // for the borders
+  $si-height: 8 * ($square-width + 2); // for the borders
+
+  .si {
+      width: $si-width;
+      height: $si-height;
+
+      div {
+        width: $si-width;
+        height: $square-width;
+        div {
+          width: $square-width;
+          height: $square-width;
+          float: left;
+          border: 1px solid black; // for the borders
+        }
+      }
+
+    // coloring the space invaders squares
+    > div:nth-of-type(1) {
+      > div:nth-of-type(3) , 
+      > div:nth-of-type(9) {
+        background-color: $si-color;
+      }
+    }
+
+    > div:nth-of-type(2) {
+      > div:nth-of-type(4), 
+      > div:nth-of-type(8) {
+        background-color: $si-color;
+      }
+    }
+
+    > div:nth-of-type(3) {
+      > div:nth-of-type(3), 
+      > div:nth-of-type(4), 
+      > div:nth-of-type(5), 
+      > div:nth-of-type(6), 
+      > div:nth-of-type(7), 
+      > div:nth-of-type(8), 
+      > div:nth-of-type(9) {
+        background-color: $si-color;
+      }
+    }
+
+    > div:nth-of-type(4) {
+      > div:nth-of-type(2), 
+      > div:nth-of-type(3), 
+      > div:nth-of-type(5), 
+      > div:nth-of-type(6), 
+      > div:nth-of-type(7), 
+      > div:nth-of-type(9),
+      > div:nth-of-type(10)  {
+        background-color: $si-color;
+      }
+    }
+
+    > div:nth-of-type(5) div {
+      background-color: $si-color;
+    }
+
+    > div:nth-of-type(6) {
+      > div:nth-of-type(1),
+      > div:nth-of-type(3), 
+      > div:nth-of-type(4), 
+      > div:nth-of-type(5), 
+      > div:nth-of-type(6), 
+      > div:nth-of-type(7), 
+      > div:nth-of-type(8), 
+      > div:nth-of-type(9),
+      > div:nth-of-type(11)  {
+        background-color: $si-color;
+      }
+    }
+
+    > div:nth-of-type(7) {
+      > div:nth-of-type(1),
+      > div:nth-of-type(3),
+      > div:nth-of-type(9),
+      > div:nth-of-type(11)  {
+        background-color: $si-color;
+      }
+    }
+
+    > div:nth-of-type(8) {
+      > div:nth-of-type(4),
+      > div:nth-of-type(5),
+      > div:nth-of-type(7),
+      > div:nth-of-type(8)  {
+        background-color: $si-color;
+      }
+    }
+  }
+}
