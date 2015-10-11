@@ -8,7 +8,7 @@ A space invader made with squares in full HTML and CSS3.
 Implement a full HTML space invader. The CSS3 uses selectors to color the correct squares.
 
 ## Demo
-http://vincentperrin.com/cr/css3/htmlcss-space-invader/
+http://vincentperrin.com/cr/css3/html-css-space-invader/
 
 ## Prerequisites
 Ruby, Sass and jQuery.
