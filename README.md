@@ -7,6 +7,9 @@ A space invader made with squares in full HTML and CSS3.
 ## Objectives
 Implement a full HTML space invader. The CSS3 uses selectors to color the correct squares.
 
+## Demo
+http://vincentperrin.com/cr/css3/htmlcss-space-invader/
+
 ## Prerequisites
 Ruby, Sass and jQuery.
 
